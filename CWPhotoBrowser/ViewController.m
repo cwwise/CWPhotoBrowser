@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "CWPhotoBrowser-Bridging-Header.h"
+#import "CWPhotoBrowser-Swift.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    PhotoBrowser *controller = [[PhotoBrowser alloc] init];
 }
 
 

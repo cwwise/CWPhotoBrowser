@@ -13,6 +13,8 @@
 		1F1111D51EF8EE6000F0D7EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F1111D31EF8EE6000F0D7EB /* Main.storyboard */; };
 		1F1111D71EF8EE6000F0D7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1111D61EF8EE6000F0D7EB /* Assets.xcassets */; };
 		1F1111DA1EF8EE6000F0D7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F1111D81EF8EE6000F0D7EB /* LaunchScreen.storyboard */; };
+		1FEF4D761F03A57200DB6D2A /* PhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF4D751F03A57200DB6D2A /* PhotoBrowser.swift */; };
+		1FEF4D781F03AB4900DB6D2A /* PhotoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF4D771F03AB4900DB6D2A /* PhotoScrollView.swift */; };
 		C6CA148B88C4DE46DD331AAD /* Pods_CWPhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD138E57C0FDA6CDB91D039 /* Pods_CWPhotoBrowser.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,9 @@
 		1F1111D61EF8EE6000F0D7EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F1111D91EF8EE6000F0D7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F1111DB1EF8EE6000F0D7EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FEF4D741F03A57200DB6D2A /* CWPhotoBrowser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CWPhotoBrowser-Bridging-Header.h"; sourceTree = "<group>"; };
+		1FEF4D751F03A57200DB6D2A /* PhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowser.swift; sourceTree = "<group>"; };
+		1FEF4D771F03AB4900DB6D2A /* PhotoScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoScrollView.swift; sourceTree = "<group>"; };
 		B228B9B308850ABFC386A1C9 /* Pods-CWPhotoBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWPhotoBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-CWPhotoBrowser/Pods-CWPhotoBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		CDD138E57C0FDA6CDB91D039 /* Pods_CWPhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWPhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +78,8 @@
 				1F1111D61EF8EE6000F0D7EB /* Assets.xcassets */,
 				1F1111D81EF8EE6000F0D7EB /* LaunchScreen.storyboard */,
 				1F1111DB1EF8EE6000F0D7EB /* Info.plist */,
+				1FEF4D721F03A53300DB6D2A /* Source-OC */,
+				1FEF4D731F03A53300DB6D2A /* Source-Swift */,
 				1F1111CA1EF8EE6000F0D7EB /* Supporting Files */,
 			);
 			path = CWPhotoBrowser;
@@ -85,6 +92,23 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		1FEF4D721F03A53300DB6D2A /* Source-OC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Source-OC";
+			sourceTree = SOURCE_ROOT;
+		};
+		1FEF4D731F03A53300DB6D2A /* Source-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF4D751F03A57200DB6D2A /* PhotoBrowser.swift */,
+				1FEF4D771F03AB4900DB6D2A /* PhotoScrollView.swift */,
+				1FEF4D741F03A57200DB6D2A /* CWPhotoBrowser-Bridging-Header.h */,
+			);
+			path = "Source-Swift";
+			sourceTree = SOURCE_ROOT;
 		};
 		25AE59236C70F6AE7E336106 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -137,6 +161,7 @@
 				TargetAttributes = {
 					1F1111C61EF8EE6000F0D7EB = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -226,8 +251,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F1111D21EF8EE6000F0D7EB /* ViewController.m in Sources */,
+				1FEF4D781F03AB4900DB6D2A /* PhotoScrollView.swift in Sources */,
 				1F1111CF1EF8EE6000F0D7EB /* AppDelegate.m in Sources */,
 				1F1111CC1EF8EE6000F0D7EB /* main.m in Sources */,
+				1FEF4D761F03A57200DB6D2A /* PhotoBrowser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,10 +375,14 @@
 			baseConfigurationReference = 199F0F42620EF8267DD6F46E /* Pods-CWPhotoBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CWPhotoBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwwise.CWPhotoBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Source-Swift/CWPhotoBrowser-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -360,10 +391,13 @@
 			baseConfigurationReference = B228B9B308850ABFC386A1C9 /* Pods-CWPhotoBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CWPhotoBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwwise.CWPhotoBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Source-Swift/CWPhotoBrowser-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -386,6 +420,7 @@
 				1F1111E01EF8EE6000F0D7EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
