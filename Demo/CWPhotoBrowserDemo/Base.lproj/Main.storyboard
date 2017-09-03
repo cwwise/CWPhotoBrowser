@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A360a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BHG-Rv-QG0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="xwi-4h-Atx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bpZ-yd-KwM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YcB-eR-vRq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hHw-dP-0a3" kind="relationship" relationship="rootViewController" id="NZy-a8-k4g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u6O-Tr-6cd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="-646.32683658170924"/>
+        </scene>
+        <!--PhotoBrowser-->
+        <scene sceneID="08n-Ju-EMl">
+            <objects>
+                <tableViewController id="hHw-dP-0a3" customClass="RootViewController" customModule="CWPhotoBrowserDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1zM-8H-Dko">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="QfW-Gg-bDn">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QfW-Gg-bDn" id="UOQ-Va-lVZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hHw-dP-0a3" id="JIy-jV-gij"/>
+                            <outlet property="delegate" destination="hHw-dP-0a3" id="DgJ-05-kke"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="PhotoBrowser" id="TU9-h6-DFU"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mI1-aD-T2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="-646"/>
+        </scene>
+        <!--Moments Controller-->
+        <scene sceneID="A9T-kv-znA">
+            <objects>
+                <viewController id="BHG-Rv-QG0" customClass="MomentsController" customModule="CWPhotoBrowserDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sp3-Kj-LvX"/>
+                        <viewControllerLayoutGuide type="bottom" id="esj-Nf-Ban"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2UH-IA-hNL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eak-L7-opo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="-1372"/>
+        </scene>
+        <!--Screen Rotate Controller-->
+        <scene sceneID="ldX-vd-uLc">
+            <objects>
+                <viewController id="MaE-H6-oPW" customClass="ScreenRotateController" customModule="CWPhotoBrowserDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rif-Z5-mOJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="PWY-kQ-r1v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xWv-h0-NJj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XNC-VA-2Wt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142" y="-1372"/>
+        </scene>
+    </scenes>
+</document>
