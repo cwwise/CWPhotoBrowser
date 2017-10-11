@@ -64,7 +64,7 @@ public class PhotoBrowser: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.clear
+        self.view.backgroundColor = UIColor.black
     
         setupCollectionView()
         NotificationCenter.default.addObserver(self, selector: #selector(didReceiveRotate(_:)), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
@@ -193,23 +193,19 @@ extension PhotoBrowser: UICollectionViewDelegate {
 // MARK: - 转场动画
 extension PhotoBrowser: PhotoBrowserScaleAnimatorDelegate {
     
-    func imageViewForAnimator(at index : Int) -> UIImageView {
-        let view = self.photoBrowserDelegate?.photoBrowser(self, thumbnailViewAt: index)
+    func presentAnimator(at index : Int) -> (imageView: UIImageView, startRect: CGRect, endRect: CGRect) {
         
+        let view = self.photoBrowserDelegate?.photoBrowser(self, thumbnailViewAt: index)
+
         let imageView = UIImageView(image: view?.image)
         imageView.frame = view!.frame
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        return imageView
-    }
-    
-    func startRectForPresent(with imageView: UIImageView, index: Int) -> CGRect {
+        
         let startFrame = imageView.convert(imageView.bounds, to: self.view)
-        return startFrame
-    }
-    
-    func endRectForPresent(with imageView: UIImageView, index: Int) -> CGRect {
-        return self.view.bounds
+        let endFrame = self.view.bounds
+        
+        return (imageView, startFrame, endFrame)
     }
     
     func dismissAnimator(at index : Int) -> (imageView: UIImageView, startRect: CGRect, endRect: CGRect) {

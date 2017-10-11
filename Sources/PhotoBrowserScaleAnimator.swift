@@ -10,12 +10,8 @@ import UIKit
 
 protocol PhotoBrowserScaleAnimatorDelegate : NSObjectProtocol {
 
-    func imageViewForAnimator(at index : Int) -> UIImageView
-    
-    func startRectForPresent(with imageView: UIImageView, index: Int) -> CGRect
+    func presentAnimator(at index : Int) -> (imageView: UIImageView, startRect: CGRect, endRect: CGRect)
 
-    func endRectForPresent(with imageView: UIImageView, index: Int) -> CGRect
-    
     func dismissAnimator(at index : Int) -> (imageView: UIImageView, startRect: CGRect, endRect: CGRect)
 }
 
@@ -67,11 +63,9 @@ extension PhotoBrowserScaleAnimator : UIViewControllerAnimatedTransitioning {
             transitionContext.completeTransition(true)
             return
         }
-                
-        let startView = delegate.imageViewForAnimator(at: index)
-        let startFrame = delegate.startRectForPresent(with: startView, index: index)
-        let endFrame = delegate.endRectForPresent(with: startView, index: index)
         
+        let (startView, startFrame, endFrame) = delegate.presentAnimator(at: index)
+
         startView.frame = startFrame
         containerView.addSubview(startView)
         

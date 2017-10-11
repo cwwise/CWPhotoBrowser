@@ -67,6 +67,10 @@ class ScreenRotateController: UIViewController {
 
     }
     
+    
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -10,6 +10,7 @@
 		1F9C45CF1F5B98790016B082 /* PhotoBrowser+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C45CE1F5B98790016B082 /* PhotoBrowser+ScrollView.swift */; };
 		1F9C45D11F5BA8530016B082 /* MomentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C45D01F5BA8530016B082 /* MomentsController.swift */; };
 		1F9C45D31F5BD7FF0016B082 /* PhotoBrowserScaleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C45D21F5BD7FF0016B082 /* PhotoBrowserScaleAnimator.swift */; };
+		1FCCA24A1F6F6FC8009C47A0 /* PhotoBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCA2491F6F6FC8009C47A0 /* PhotoBrowserView.swift */; };
 		1FF3491D1F5AE60000BD0112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF3491C1F5AE60000BD0112 /* AppDelegate.swift */; };
 		1FF3491F1F5AE60000BD0112 /* IndicatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF3491E1F5AE60000BD0112 /* IndicatorController.swift */; };
 		1FF349221F5AE60000BD0112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF349201F5AE60000BD0112 /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 		1F9C45CE1F5B98790016B082 /* PhotoBrowser+ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoBrowser+ScrollView.swift"; sourceTree = "<group>"; };
 		1F9C45D01F5BA8530016B082 /* MomentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentsController.swift; sourceTree = "<group>"; };
 		1F9C45D21F5BD7FF0016B082 /* PhotoBrowserScaleAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserScaleAnimator.swift; sourceTree = "<group>"; };
+		1FCCA2491F6F6FC8009C47A0 /* PhotoBrowserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserView.swift; sourceTree = "<group>"; };
 		1FF349191F5AE60000BD0112 /* CWPhotoBrowserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWPhotoBrowserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF3491C1F5AE60000BD0112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FF3491E1F5AE60000BD0112 /* IndicatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				1FF3491E1F5AE60000BD0112 /* IndicatorController.swift */,
 				1FF3495D1F5B09D700BD0112 /* SingleCellController.swift */,
 				1FF3495B1F5B092800BD0112 /* ScreenRotateController.swift */,
+				1FCCA2491F6F6FC8009C47A0 /* PhotoBrowserView.swift */,
 				1F9C45D01F5BA8530016B082 /* MomentsController.swift */,
 				1FF349201F5AE60000BD0112 /* Main.storyboard */,
 				1FF349511F5AE67600BD0112 /* LaunchScreen.storyboard */,
@@ -511,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FF3491F1F5AE60000BD0112 /* IndicatorController.swift in Sources */,
+				1FCCA24A1F6F6FC8009C47A0 /* PhotoBrowserView.swift in Sources */,
 				1F9C45D11F5BA8530016B082 /* MomentsController.swift in Sources */,
 				1FF3491D1F5AE60000BD0112 /* AppDelegate.swift in Sources */,
 				1FF3495E1F5B09D700BD0112 /* SingleCellController.swift in Sources */,
