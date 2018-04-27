@@ -166,11 +166,11 @@ public class PhotoBrowserCell: UICollectionViewCell {
         
     }
     
-    func onSingleTap() {
+    @objc func onSingleTap() {
         delegate?.photoBrowserCellDidSingleTap(self)
     }
     
-    func onDoubleTap(_ doubleTap: UITapGestureRecognizer) {
+    @objc func onDoubleTap(_ doubleTap: UITapGestureRecognizer) {
 
         // 如果当前没有任何缩放，则放大到目标比例
         // 否则重置到原比例
@@ -188,7 +188,7 @@ public class PhotoBrowserCell: UICollectionViewCell {
         
     }
     
-    func onPan(_ pan: UIPanGestureRecognizer) {
+    @objc func onPan(_ pan: UIPanGestureRecognizer) {
     
     }
     

@@ -61,7 +61,7 @@ class MomentsController: UIViewController {
         }
     }
 
-    func tapAction(_ tap: UITapGestureRecognizer) {
+    @objc func tapAction(_ tap: UITapGestureRecognizer) {
         
         guard let imageView = tap.view as? UIImageView, tap.state == .ended else {
             return

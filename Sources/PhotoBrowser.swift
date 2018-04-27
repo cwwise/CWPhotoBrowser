@@ -117,7 +117,7 @@ public class PhotoBrowser: UIViewController {
         layout.itemSize = size
     }
 
-    func didReceiveRotate(_ notification: Notification) {
+    @objc func didReceiveRotate(_ notification: Notification) {
         
         guard let device = notification.object as? UIDevice else {
             return

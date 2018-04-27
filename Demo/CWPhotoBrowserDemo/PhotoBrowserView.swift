@@ -56,8 +56,8 @@ class PhotoBrowserView: UIView {
 extension PhotoBrowserView {
     
     func cellForPage(_ index: Int) -> UIImageView {
-        
-   
+        let imageView = UIImageView()
+        return imageView
     }
     
     
